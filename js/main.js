@@ -50,7 +50,7 @@
 
     var prog = el('div', { class: 'prog', role: 'progressbar', 'aria-label': 'Прогресс теста', 'aria-valuemin': '0', 'aria-valuemax': String(total), 'aria-valuenow': String(step) });
     var bar = el('i');
-    bar.style.width = (step / total * 100) + '%';
+    bar.style.transform = 'scaleX(' + (step / total) + ')';
     prog.appendChild(bar);
     app.appendChild(prog);
 
@@ -77,7 +77,7 @@
     var box = el('div', { class: 'result' });
 
     var prog = el('div', { class: 'prog', role: 'progressbar', 'aria-label': 'Прогресс теста', 'aria-valuemin': '0', 'aria-valuemax': '4', 'aria-valuenow': '4' });
-    var bar = el('i'); bar.style.width = '100%'; prog.appendChild(bar);
+    var bar = el('i'); bar.style.transform = 'scaleX(1)'; prog.appendChild(bar);
     box.appendChild(el('p', { class: 'result__label' }, 'Тест пройден'));
     box.appendChild(prog);
 
