@@ -15,9 +15,7 @@
   <meta property="og:image" content="https://xevorin.github.io/speakup-school/screenshot.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -50,11 +48,11 @@
         </div>
 
         <div class="call" aria-hidden="true">
-          <div class="call__bar"><i></i><i></i><i></i><span>Speaking club в Zoom</span></div>
+          <div class="call__bar"><i></i><i></i><i></i><span>Разговорный клуб в Zoom</span></div>
           <div class="call__grid">
             <div class="tile tile--teacher">
               <svg viewBox="0 0 120 120" class="tile__ava"><circle cx="60" cy="60" r="60" fill="#DCE2FF"/><path d="M22 120c4-26 20-38 38-38s34 12 38 38z" fill="#2440E6"/><circle cx="60" cy="52" r="22" fill="#F2C7A5"/><path d="M36 50c0-18 12-28 26-28 14 0 24 10 24 26-8-2-16-8-20-14-6 8-18 14-30 16z" fill="#5B3A29"/></svg>
-              <span class="tile__name">Анна · teacher</span>
+              <span class="tile__name">Анна, преподаватель</span>
             </div>
             <div class="tile">
               <svg viewBox="0 0 120 120" class="tile__ava"><circle cx="60" cy="60" r="60" fill="#FFE0E1"/><path d="M22 120c4-26 20-38 38-38s34 12 38 38z" fill="#D92F36"/><circle cx="60" cy="52" r="22" fill="#E8B48F"/><path d="M38 46c2-14 12-22 24-22s20 8 22 20c-14 0-30-4-46 2z" fill="#1E1E2E"/></svg>
@@ -313,7 +311,7 @@
             </div>
             <div class="field field--check">
               <input id="f-consent" name="consent" type="checkbox" aria-describedby="f-consent-err">
-              <label for="f-consent">Согласен на обработку персональных данных</label>
+              <label for="f-consent">Даю <a href="consent.html" target="_blank" rel="noopener">согласие на обработку персональных данных</a> по <a href="privacy.html" target="_blank" rel="noopener">политике</a></label>
               <p class="field__err" id="f-consent-err"></p>
             </div>
             <button class="btn btn--red btn--full" type="submit">Записаться на пробный урок</button>
@@ -335,7 +333,7 @@
   <footer class="footer">
     <div class="wrap footer__in">
       <span class="logo logo--sm">Speak&nbsp;Up</span>
-      <p>Учебный проект · Егор Фарафонов · <a href="https://www.fl.ru/users/farafonovegor07/">профиль на FL.ru</a></p>
+      <p>Учебный проект · Егор Фарафонов · <a href="https://www.fl.ru/users/farafonovegor07/">профиль на FL.ru</a> · <a href="privacy.html">Политика обработки персональных данных</a></p>
       <p class="footer__note">Школа вымышленная, цены и преподаватели придуманы для концепта.</p>
     </div>
   </footer>
